@@ -1,0 +1,24 @@
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+div{
+    text-align: center;
+}
+input{
+    border: none;
+    border-radius: 2rem;
+    width: 15dvw;
+    height: 8dvh;
+}
+#but{
+    background-color: white;
+    color: gray;
+    font-size: 2rem;
+}
+#but:hover{
+    background-color: aliceblue;
+    color: black;
+}

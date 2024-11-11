@@ -1,0 +1,25 @@
+#linha{
+    display: flex;/* torna flexivel */
+    flex-direction: row;/* torna flexivel */
+}
+#coluna{
+    background-color: aqua;
+    display: flex; /* torna flexivel */
+    flex-direction: column;/* força a ficar alinhado em coluna */
+}
+/* tamanho, altura e cor dos quadrados */
+.pri{
+    width: 20dvw;
+    height: 20dvh;
+    background-color: green;
+}
+.seg{
+    width: 20dvw;
+    height: 20dvh;
+    background-color: red;
+}
+.ter{
+    width: 20dvw;
+    height: 20dvh;
+    background-color: blue;
+}

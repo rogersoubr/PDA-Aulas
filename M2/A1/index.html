@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>media</title>
+</head>
+<body>
+    <main>
+        
+        <form>
+            <!-- Pergunta a quantidade de campos que quer -->
+            <div id="inputPergunta">
+                <label for="quantidade"><h1>Quantidade de notas para a média</h1></label>
+                <input type="number" id="quantidade">
+                <button type="button"  onclick="adicionaCampo(event)">Enviar</button>
+            </div>
+           
+            <!-- Mostra os inputs para inserir e mostra o resultado -->
+            <div id="inputMostra">
+                <h1>Será feita a média aqui</h1>
+            </div>
+            <button type="button" onclick="enviarNota(event)">Enviar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

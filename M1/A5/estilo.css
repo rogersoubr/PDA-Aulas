@@ -1,0 +1,97 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+  }
+  
+  ul,
+  ol,
+  li {
+    color: black;
+    list-style: none;
+  }
+  
+  /* .example2 {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+  } */
+  .example {
+    color: #ffffff;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  
+  /*      PROPRIEDADES E VALORES      */
+  /*
+     align-items -> alinhamento vertical
+     justify-content -> alinhamento horizontal 
+    
+     VALORES ACEITOS (existem mais pesquisem!)
+     flex-start -> comeco
+     flex-end -> final
+     center -> centro
+  
+     EXEMPLO:
+     align-items: center;
+  */
+  
+  .example-item_first {
+    background-color: rgb(34, 220, 233);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center ;
+  }
+  .example-item_second {
+    background-color: #57c76b;
+    width: 300px;
+    height: 300px;
+    display: flex ;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center ; 
+  }
+  .example-item_third {
+    background-color: rgb(221, 70, 115);
+    width: 300px;
+    height: 300px;
+    display: flex ;
+    flex-direction:column-reverse ;
+    justify-content:center ;
+    align-items:center ;
+  }
+  .example-item_for {
+    background-color: rgb(32, 19, 32);
+    width: 300px;
+    height: 300px;
+    display: flex ;
+    flex-direction:column-reverse ;
+    justify-content:center ;
+    align-items:center ;
+  }
+  
+  ul,
+  ol,
+  li {
+    display: block;
+  }
+  
+  img {
+     display:flex;
+    justify-content:left ;
+  }
+  @media screen and (max-width: 400px){
+    
+  }

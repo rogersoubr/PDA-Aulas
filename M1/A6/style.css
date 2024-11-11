@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+}
+button{
+    background-color: palevioletred;
+    border-radius: 10px;
+    border: none;
+    width: 10dvw;
+    height: 10dvh;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
