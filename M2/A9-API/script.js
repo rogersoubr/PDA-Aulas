@@ -1,7 +1,9 @@
-
+//´pega do DOM
 const nome = document.getElementById("name");
 const dimension = document.getElementById("dimension");
 const type = document.getElementById("type");
+const input = document.getElementById("location");
+const button = document.getElementById("buscar");
 
 function pegaDAdosApi(nomeLocation){//pega o nome
   const xml = new XMLHttpRequest();
@@ -9,7 +11,7 @@ function pegaDAdosApi(nomeLocation){//pega o nome
   //abrindo
   xml.open("GET", `https://rickandmortyapi.com/api/location/?name=${nomeLocation}`);//coloca o nome no link
 
-  xml.open();
+  xml.send();//Envia a solicitação
 
   //tratatando os dados ONLOAD retorna, o que você vai fazer
   xml.onload = function (){//
@@ -19,12 +21,15 @@ function pegaDAdosApi(nomeLocation){//pega o nome
     
     console.log(respostaAPI.results[0].name); //depende da documentação, nesse caso pega o resultado do primeiro JASON, que tenha o atributo nome
 
-    nome.innerHTML = respostaAPI.results[0].name;
-    dimension.innerHTML = respostaAPI.results[0].dimension;
-    type.innerHTML = respostaAPI.results[0].dimension;
+    nome.innerText = respostaAPI.results[0].name;
+    dimension.innerText = respostaAPI.results[0].dimension;
+    type.innerText = respostaAPI.results[0].dimension;
 
 
   }
 
 }
-pegaDAdosApi("Citabel of Rick");
+button.addEventListener('click', ()=>{
+  pegaDAdosApi(input.value);
+  input.value = '';
+});

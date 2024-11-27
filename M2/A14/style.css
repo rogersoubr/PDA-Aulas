@@ -1,0 +1,30 @@
+body{
+    display: flex;
+}
+
+.datas{
+    background-color: mediumseagreen;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+}
+#mostra{
+    background-color:cornflowerblue;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 30rem;
+    display: none;
+}
+#envia{
+    width: 10rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 10rem;
+}
+input{
+    border: none;
+    border-radius: 1rem;
+
+}

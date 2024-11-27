@@ -1,0 +1,15 @@
+#info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#modal{
+    background-color: purple;
+    width: 10dvw;
+    /* display: none; */
+    flex-direction:row;
+    justify-content:center; 
+    align-items:center; 
+    margin-top: -10%;
+    margin-left: 30%;
+}
