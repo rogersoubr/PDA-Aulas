@@ -53,9 +53,9 @@ botao.addEventListener("click",() => {
     }
 
     
-   });
+});
    
-   function chamaModal(messagem) {
+function chamaModal(messagem) {
     document.getElementById("textModal").innerText = messagem;
     modal.style.display = "flex";
 

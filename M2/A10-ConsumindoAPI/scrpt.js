@@ -28,7 +28,7 @@ function pullAPI(oCep){//pega os dados da api
 
 
 }
-button.addEventListener("click",() => {
+botao.addEventListener("click",() => {
     pullAPI(cep.value);
     console.log(cep.value)
    })

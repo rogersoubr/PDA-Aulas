@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/M2/A1/style.css">
     <title>media</title>
 </head>
 <body>
@@ -12,16 +12,26 @@
         <form>
             <!-- Pergunta a quantidade de campos que quer -->
             <div id="inputPergunta">
-                <label for="quantidade"><h1>Quantidade de notas para a média</h1></label>
-                <input type="number" id="quantidade">
+                <h1>Calculadora de média</h1>
+                <label for="quantidadeAlunos"><h3>Digite a Quantidade de alunos:</h3></label>
+                <input type="number" id="quantidadeAlunos" placeholder="Somente Números">
+
+                <label for="quantidadeProvas"><h3>Digite a quantidade de provas por aluno:</h3></label>
+                <input type="number" id="quantidadeProvas" placeholder="Somente Números">
                 <button  onclick="adicionaCampo(event)">Enviar</button>
             </div>
            
             <!-- Mostra os inputs para inserir e mostra o resultado -->
+
             <div id="inputMostra">
                 <h1>Será feita a média aqui</h1>
+
             </div>
-            <button onclick="enviarNota(event)">Enviar</button>
+            <div id="action">
+                <button id="enviarNota">Enviar nota</button>
+                <button id="apagar">Apagar</button>
+            </div>
+
         </form>
     </main>
     <script src="script.js"></script>
