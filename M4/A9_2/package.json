@@ -1,18 +1,20 @@
 {
-  "name": "a9-1",
+  "name": "aula9_2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "Dont have",
+  "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "nodemon": "^3.1.9"
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.1.0"
   }
 }
