@@ -3,7 +3,7 @@ import artista from "./routes/artista.route.js";
 import produto from "./routes/produto.route.js";
 
 const app = express();
-const PORT = 3000;
+const PO"RT = 3000;
 
 // const pessoa = {
 //   nome: "Daniel",
