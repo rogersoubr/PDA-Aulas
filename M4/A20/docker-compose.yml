@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: meu_app_container  # Nome que você quer dar ao container
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules  # Evita conflito com node_modules do host
+    ports:
+      - "3000:3000"
+    command: sh -c "npx prisma generate --schema=src/prisma/schema.prisma && node src/server.js"
+    environment:
+      - NODE_ENV=development

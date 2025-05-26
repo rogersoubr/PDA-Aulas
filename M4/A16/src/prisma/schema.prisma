@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // ESCOLHE QUAL BANCO DE DADOS
+  url      = env("DATABASE_URL") // APONTA PARA VARIÁVEL DE AMBIENTE QUE TEM A STRING DE CONEXÃO COM O BANCO
+}
+
+enum ListaVermelha {
+  EX   /// Extinto
+  EW   /// Extinto na Natureza
+  CR   /// Criticamente em Perigo
+  EN   /// Em Perigo
+  VU   /// Vulnerável
+  NT   /// Quase Ameaçada
+  LC   /// Pouco Preocupante
+  DD   /// Dados Insuficientes
+}
+
+model Animal{
+  id             Int              @id @default(autoincrement())
+  nome           String      
+  nomeCientifico String
+  genero         String
+  familia        String
+  popEstimada    Int
+  bioma          String
+  nivelAmeaca    ListaVermelha
+}

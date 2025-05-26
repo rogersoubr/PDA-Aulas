@@ -1,0 +1,24 @@
+{
+  "name": "aula_20",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "docker": "docker run -p 3000:3000 aula_20",
+    "docker:build": "docker build -t aula_20 .",
+    "docker:compose": "docker-compose up --build",
+    "docker:compose:nolog": "docker-compose up -d --build",
+    "prisma:migrate": "prisma migrate dev --schema=src/prisma/schema.prisma",
+    "prisma:generate": "prisma generate --schema=src/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0"
+  }
+}
