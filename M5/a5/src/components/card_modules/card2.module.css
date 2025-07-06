@@ -1,0 +1,17 @@
+.div{
+    display: flex;/*coloquei esse para deixar flexível */   flex-direction:column;/*fica em colunas */   
+    justify-content:center;/*alinhamento horizontal ao centro*/ 
+    align-items:center;/*alinhamento vertical*/ 
+    width: 60%;
+    border-radius: 1rem;
+    border-color: #f2f5f7;
+    background-color: #23282b;
+    text-align: center;
+    margin: 1rem;
+}
+
+.img{
+    width: 60%;
+    height: 60%;
+    border-radius: 1rem;
+}

@@ -1,0 +1,11 @@
+.Pai{
+    display: flex;/*coloquei esse para deixar flexível */
+    flex-direction:column;/*fica em colunas */  
+    justify-content:center;/*alinhamento horizontal ao centro*/ 
+    align-items:center;/*alinhamento vertical*/      border-radius: 1rem;
+    background-color: #c06868;
+    width: 60%;
+    height: 30rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}

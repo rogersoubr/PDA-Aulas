@@ -1,0 +1,9 @@
+/* A CLASSE VIRA MEIO QUE UM ID */
+.footer{
+    width: 100%;
+    background-color: #f2f5f7;
+    display: flex;
+    gap: 3px;
+    color: #23282b;
+    padding: 5px;
+}
